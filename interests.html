@@ -66,10 +66,11 @@
                     <div class="col-md-12">
                         <h3 class="section-heading uppercase">Conferences and Meetups attended</h3>
                         <br>
+                        <label id='year'></label>
+                        <input id='slider' type='range' min='1900' max='1999' step='1' value='0' /><br>
                         <label for="lat">Latitude:</label><input type="number" id="latitude" name="latitude"><br>
                         <label for="lng">Longitude:</label><input type="number" id="longitude" name="longitude">
                         <button id="submit-coords">Submit Coordinates</button>
-                        <button id="restart-button">Refresh Map</button>
                     </div>
                 </div>
                 <div id="map"></div>
@@ -226,6 +227,7 @@
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFMn3JP7ackPwTy79cbqWMN-b-Ox4FsEk&callback=initMap&libraries=&v=weekly"
         defer></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
     <script src="assets/js/maps.js"></script>
 </body>
